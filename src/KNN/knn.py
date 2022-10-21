@@ -103,7 +103,7 @@ if __name__ == "__main__":
     dists = ["cosine", "euclidean", "cityblock"]
     
     ############   HW6 DATASET  ##############
-    df = pd.read_csv("../data/hw6_data.csv")
+    df = pd.read_csv("data/hw6_data.csv")
     y = df["Outcome"].to_numpy()  # labels
     X = df.drop(columns=["Outcome"]).to_numpy()  # features
     
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     print()
         
     ###########  IRIS DATASET ##############
-    df = pd.read_csv("../data/iris.data", header=None)
+    df = pd.read_csv("data/iris.data", header=None)
     df.columns = ["sepal_len", "sepal_wid", "petal_len", "petal_wid", "class"]
     
     # remove sepal and pedal widths
